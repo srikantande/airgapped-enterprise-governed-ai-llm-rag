@@ -168,29 +168,44 @@ Explore dashboards, traces, etc for each query executed by the users.
 
 <img width="979" height="227" alt="Screenshot 7" src="https://github.com/user-attachments/assets/955241fc-5077-4c80-8337-e8347e8658eb" />
 
+---
+
 **Screenshot 1.png**
 <img width="1528" height="967" alt="Screenshot 1" src="https://github.com/user-attachments/assets/7f24956d-3c27-47a8-b68c-e7f1b9fa1ee9" />
 
 **Screenshot 2.png:**
 <img width="1673" height="639" alt="Screenshot 2" src="https://github.com/user-attachments/assets/0fefafd6-1b96-4748-bb00-36b843fded1c" />
 
+---
+
 **Screenshot 3.png:**
 <img width="1663" height="890" alt="Screenshot 3" src="https://github.com/user-attachments/assets/0eeb1009-72a2-4d9c-9be3-fb40fe84b9ca" />
+
+---
 
 **Screenshot 4.png:**
 <img width="1736" height="924" alt="Screenshot 4" src="https://github.com/user-attachments/assets/10b9bb48-5fa4-4363-8f25-3df66b610c87" />
 
+---
+
 **Screenshot 5.png:**
 <img width="1741" height="963" alt="Screenshot 5" src="https://github.com/user-attachments/assets/44da7801-3e9f-4d91-9f51-f7a96756d0d7" />
+
+---
 
 **Screenshot 6.png:**
 <img width="1738" height="969" alt="Screenshot 6" src="https://github.com/user-attachments/assets/f663bc09-d0a0-4785-8d1d-e34b6b33c1d8" />
 
+---
+
 **Generative-AI-and-LLMs-for-Dummies.pdf:**
 https://github.com/aadi1011/AI-ML-Roadmap-from-scratch/blob/main/resources/Generative-AI-and-LLMs-for-Dummies.pdf
 
+---
+
 **HR Policy:**
 SriLab_AI_HR_Policies-v3.txt
+
 
 ------------------------------------------------------------------
 © 2026 **SriLab.AI India** | *Enterprise Architecture Division*
