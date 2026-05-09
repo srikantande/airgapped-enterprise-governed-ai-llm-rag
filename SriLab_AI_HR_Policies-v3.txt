@@ -1,0 +1,121 @@
+========================================================================
+             SRILAB.AI - HR POLICY MANUAL & COMPENSATION GUIDE
+========================================================================
+
+1. WELCOME MESSAGES
+------------------------------------------------------------------------
+From the Desk of the CEO, Sri:
+Welcome to SriLab.AI! We are dedicated to building the future of artificial 
+intelligence, and our success is driven by our exceptional team. We believe 
+in fostering a culture of innovation, respect, and continuous growth.
+
+From the Desk of the HR Head, Heer:
+At SriLab.AI, your well-being, safety, and professional growth are our top 
+priorities. This manual outlines our core policies, our adherence to Indian 
+Labour Laws, and our compensation structures to ensure full transparency.
+
+
+2. GENERAL WORKPLACE POLICIES
+------------------------------------------------------------------------
+* Working Hours: Standard working hours are 9:00 AM to 6:00 PM, Monday to 
+  Friday (40 hours per week). Flexible timings can be availed with 
+  managerial approval.
+* Leave Policy:
+  - Earned Leave (EL): 15 days per annum.
+  - Casual Leave (CL): 7 days per annum.
+  - Sick Leave (SL): 7 days per annum.
+  - Public Holidays: 10 fixed mandatory and national holidays, plus 2 
+    optional/restricted holidays.
+
+
+3. POLICIES & LABOUR LAWS BIFURCATED BY GENDER (As per Indian Law)
+------------------------------------------------------------------------
+
+A. POLICIES FOR FEMALE EMPLOYEES:
+1. Maternity Benefit (Amendment) Act, 2017: 
+   - Female employees are entitled to 26 weeks of paid maternity leave for 
+     the first two children (and 12 weeks for subsequent children).
+   - Provisions for 'Work from Home' post-maternity leave, subject to the 
+     nature of work and managerial approval.
+   - Crèche facility access is provided as the company strength exceeds 
+     50 employees.
+2. The Sexual Harassment of Women at Workplace (POSH) Act, 2013:
+   - SriLab.AI maintains a strict Zero-Tolerance policy against harassment.
+   - An Internal Complaints Committee (ICC) headed by a senior female 
+     employee has been constituted to address and resolve any grievances.
+3. Safety During Night Shifts (State Shops & Establishments Act):
+   - Female employees working between 8:00 PM and 6:00 AM will be provided 
+     with mandatory company-arranged secure transportation (door-to-door).
+
+B. POLICIES FOR MALE EMPLOYEES:
+1. Paternity Leave (Company Policy aligned with progressive standards):
+   - Male employees are entitled to 2 weeks (14 calendar days) of paid 
+     paternity leave to bond with their newborn or adopted child.
+2. Equal Opportunity & Anti-Harassment:
+   - While POSH legally focuses on women, SriLab.AI enforces a gender-neutral 
+     anti-harassment workplace. Any complaints of harassment from male 
+     employees are handled with equal severity by the HR Disciplinary Committee.
+
+C. COMMON STATUTORY COMPLIANCES FOR ALL EMPLOYEES:
+1. Equal Remuneration Act, 1976: Complete parity in wages for male and female 
+   employees performing the same or similar work.
+2. Employees' Provident Funds and Miscellaneous Provisions Act, 1952.
+3. Payment of Gratuity Act, 1972 (Payable after 5 years of continuous service).
+
+
+4. COMPENSATION BREAKDOWN & CTC POLICY (Compliant with New Wage Codes)
+------------------------------------------------------------------------
+SriLab.AI's compensation structure is strictly aligned with the latest Indian 
+Labour Laws, specifically the New Code on Wages. Under these codes, the "Wages" 
+(Basic Salary) must constitute at least 50% of the Gross Remuneration.
+
+A. UNIVERSAL CALCULATION FORMULAS (For any Fixed CTC)
+You can calculate your exact salary components based on your Total Fixed CTC 
+using the standardized formulas below. 
+
+Step 1: Determine Gross Salary
+* Gross Salary = Total Fixed CTC ÷ 1.0841
+
+Step 2: Calculate Individual Components
+-------------------------------------------------------------------------
+| Component                   | Formula (Based on Gross Salary / Basic) | Approx % of Total CTC |
+-------------------------------------------------------------------------
+| Basic Salary                | 50% of Gross Salary                     | ~46.12%               |
+| House Rent Allowance (HRA)  | 50% of Basic Salary (Metro)             | ~23.06%               |
+| Leave Travel Allowance (LTA)| 10% of Basic Salary                     | ~ 4.61%               |
+| Special Allowance           | Gross Salary - (Basic + HRA + LTA)      | ~18.45%               |
+| Employer PF (Retiral)       | 12% of Basic Salary                     | ~ 5.53%               |
+| Gratuity (Retiral)          | 4.81% of Basic Salary (15/26/12)        | ~ 2.22%               |
+-------------------------------------------------------------------------
+*Note: Total CTC = Gross Salary + Employer PF + Gratuity*
+
+B. EXAMPLE CTC BREAKDOWN:
+(Hypothetical Salary: ₹12,00,000 Total Fixed CTC per Annum)
+
+-------------------------------------------------------------------------
+| Salary Component                     | Monthly (₹)    | Annually (₹)  |
+-------------------------------------------------------------------------
+| GROSS SALARY ELEMENTS                |                |               |
+|  - Basic Salary                      |      46,122    |     5,53,464  |
+|  - House Rent Allowance              |      23,061    |     2,76,732  |
+|  - Leave Travel Allowance            |       4,612    |       55,344  |
+|  - Special Allowance                 |      18,449    |     2,21,388  |
+|--------------------------------------|----------------|---------------|
+| Total Gross Salary                   |      92,244    |    11,06,928  |
+|--------------------------------------|----------------|---------------|
+| STATUTORY RETIRAL BENEFITS           |                |               |
+|  - EPF Contribution                  |       5,535    |       66,420  |
+|  - Gratuity                          |       2,218    |       26,616  |
+|--------------------------------------|----------------|---------------|
+| Total Retiral Benefits               |       7,753    |       93,036  |
+|--------------------------------------|----------------|---------------|
+| TOTAL CTC                            |    1,00,000    |    12,00,000* |
+-------------------------------------------------------------------------
+*Slight rounding differences may apply (+/- ₹36 annually).*
+
+========================================================================
+Policy Acknowledged by:
+CEO: Sri
+HR Head: Heer
+Date of Issuance: April 2026
+========================================================================
