@@ -1,0 +1,31 @@
+model_list:
+  # 1. The Reasoning Engine
+  - model_name: local_inference_engine
+    litellm_params:
+      model: ollama/llama3.1:8b
+      api_base: "http://host.docker.internal:11434"
+      rpm: 120
+      timeout: 1800
+# UPGRADE: Add stream: True to help keep the connection alive
+      stream: True
+
+  # 2. The Vectorization Engine (With Alias Support)
+  - model_name: nomic-embed-moe
+    litellm_params:
+      model: ollama/nomic-embed-text-v2-moe
+      api_base: "http://host.docker.internal:11434"
+      rpm: 2000
+      timeout: 1800
+
+# THE CRITICAL FIXES FOR THE 400 ERRORS
+litellm_settings:
+  # Drops 'encoding_format' and other OpenAI-specific noise
+  drop_params: True
+  # Ensures that even if Ollama is slow to wake up, the proxy doesn't kill the thread
+  set_completed_by_on_header: True 
+  # NEW: Force the proxy to wait longer for the socket to open
+  request_timeout: 1800
+  
+router_settings:
+  # Helps LiteLLM intelligently route to the fastest available instance
+  routing_strategy: latency-based-routing
