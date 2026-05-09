@@ -82,7 +82,7 @@ This application handles the heavy lifting of document parsing, chunking, and ve
 This application is stripped of all document parsing capabilities. It exists purely to execute similarity searches against Qdrant, route prompts to LiteLLM, and log traces to Langfuse.
 
 ### Architecture & Flow Diagram
-
+```
 ===================================================================================================================================================
                                              SriLab.AI India: SOVEREIGN DATA FABRIC - LLD with Flow Diagram 
 ===================================================================================================================================================
@@ -119,7 +119,7 @@ This application is stripped of all document parsing capabilities. It exists pur
       │                             [ VECTOR MODEL ]                                              [ REASONING MODEL ]                       │
       │                          nomic-embed-text-v2-moe                                              llama3.1:8b                           │
       └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-
+```
 ### Hands-on - Deployment of above Architecture:
 
 % python3.11 -m venv py3.11.venv
