@@ -166,6 +166,8 @@ Explore dashboards, traces, etc for each query executed by the users.
 
 ## Annexure
 
+<img width="979" height="227" alt="Screenshot 7" src="https://github.com/user-attachments/assets/955241fc-5077-4c80-8337-e8347e8658eb" />
+
 **Screenshot 1.png**
 <img width="1528" height="967" alt="Screenshot 1" src="https://github.com/user-attachments/assets/7f24956d-3c27-47a8-b68c-e7f1b9fa1ee9" />
 
