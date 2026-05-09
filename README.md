@@ -1,4 +1,6 @@
 # Built by SriLab.AI India
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial-blue.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
 
 ## Problem Statement
 
@@ -130,6 +132,8 @@ This application is stripped of all document parsing capabilities. It exists pur
 
 % python -m pip install --no-cache-dir -r requirements.txt
 
+Save env file as .env
+
 #### 1. Spin up Local Inference Engine: Ollama (Removes external API dependency)
 
 % docker run -d -v ollama:/root/.ollama -p 11434:11434 --name inference_engine_ollama ollama/ollama:latest
@@ -142,7 +146,7 @@ https://ollama.com/library/nomic-embed-text-v2-moe
 
 % docker exec -it inference_engine_ollama ollama pull llama3.1:8b
 
-% date ; time docker exec -it inference_engine_ollama ollama pull nomic-embed-text-v2-moe
+% docker exec -it inference_engine_ollama ollama pull nomic-embed-text-v2-moe
 
 #### 3. ALiteLLM proxy configuration file
 
@@ -164,17 +168,73 @@ litellm_proxy_gateway_config.yaml
 
 % docker compose -f langfuse/docker-compose.yml  up -d
 
+**Langfuse Creating First Organisation, Project & API Keys:** Access the Lanfuse lite on http://localhost:3000 >> Sign up >> <Name>, <emailID> & <password> > sign up >> New Organisation >> Organization name: <Org Name> >> Organization Members (defalt you will able to see only admin at this stage) > Next >> New Project - Project name: <Project Nanme> > create.
+Create API keys - Create New API Key >> Copy and secure the generated public and secret keys for telemetry injection in the next step.
+
+**Langfuse - Creating Custom Model Defination:** http://localhost:3000 >> settings >> Model Definitions >> Add model defination >> Model name: local_inference_engine [this is refered from litellm_proxy_gateway_config.yaml file's model_list name of model - ollama/llama] >> Define prices of input & output [for this lab I set it as input: 0.001 & output: 0.002] >> rest all as is >> Submit. [Refer to Screenshot 1.png]
+
+**Update the .env file:** Update the .env file with LANGFUSE_SECRET_KEY and LANGFUSE_PUBLIC_KEY
+
 #### 7. Application Deployment
 
 **Terminal 1 (Admin Gateway):**
 
 % python3 -m streamlit run admin_rag_ingestion-1.py --server.port 8501 --logger.level=debug
 
+http://localhost:8501
+
+Upload the 'SriLab_AI_HR_Policies-v3.txt' & 'Generative-AI-and-LLMs-for-Dummiespdf.pdf' [Refer to Screenshot 2.png]
+
 **Terminal 2 (Employee Interface):**
 
 % python3 -m streamlit run employee_chat_inference-1.py --server.port 8502 --logger.level=debug
 
+http://localhost:8502
+
+At prompt, write queries related to both file as show in image [Refer to Screenshot 3.png]
+
+## AI Enterprise Governance:
+
+http://localhost:3000
+
+Explore dashboards, traces, etc for each query executed by the users.
+[Refer to Screenshot 4.png, Screenshot 5.png & Screenshot 6.png]
+
+## Annexure
+
+**Screenshot 1.png**
+<img width="1528" height="967" alt="Screenshot 1" src="https://github.com/user-attachments/assets/7f24956d-3c27-47a8-b68c-e7f1b9fa1ee9" />
+
+**Screenshot 2.png:**
+<img width="1673" height="639" alt="Screenshot 2" src="https://github.com/user-attachments/assets/0fefafd6-1b96-4748-bb00-36b843fded1c" />
+
+**Screenshot 3.png:**
+<img width="1663" height="890" alt="Screenshot 3" src="https://github.com/user-attachments/assets/0eeb1009-72a2-4d9c-9be3-fb40fe84b9ca" />
+
+**Screenshot 4.png:**
+<img width="1736" height="924" alt="Screenshot 4" src="https://github.com/user-attachments/assets/10b9bb48-5fa4-4363-8f25-3df66b610c87" />
+
+**Screenshot 5.png:**
+<img width="1741" height="963" alt="Screenshot 5" src="https://github.com/user-attachments/assets/44da7801-3e9f-4d91-9f51-f7a96756d0d7" />
+
+**Screenshot 6.png:**
+<img width="1738" height="969" alt="Screenshot 6" src="https://github.com/user-attachments/assets/f663bc09-d0a0-4785-8d1d-e34b6b33c1d8" />
+
+**Generative-AI-and-LLMs-for-Dummies.pdf:**
+https://github.com/aadi1011/AI-ML-Roadmap-from-scratch/blob/main/resources/Generative-AI-and-LLMs-for-Dummies.pdf
+
+**HR Policy:**
+SriLab_AI_HR_Policies-v3.txt
 
 ------------------------------------------------------------------
 © 2026 **SriLab.AI India** | *Enterprise Architecture Division*
 ------------------------------------------------------------------
+## ⚖️ License & Commercial Use
+
+This repository is strictly governed by a dual Non-Commercial license to protect Enterprise Architecture IP:
+* **Code & Software:** [PolyForm Noncommercial License 1.0.0](LICENSE)
+* **Architecture & Docs:** [Creative Commons BY-NC 4.0](LICENSE)
+
+**You may not deploy this architecture or code in a commercial, corporate, or production environment without explicit written consent.**
+
+For enterprise licensing, consulting, or implementation approval, please contact Srikant.Ande <at> Gmail.com
