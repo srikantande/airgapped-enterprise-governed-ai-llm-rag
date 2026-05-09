@@ -84,44 +84,8 @@ This application handles the heavy lifting of document parsing, chunking, and ve
 This application is stripped of all document parsing capabilities. It exists purely to execute similarity searches against Qdrant, route prompts to LiteLLM, and log traces to Langfuse.
 
 ### Architecture & Flow Diagram
-```
-===================================================================================================================================================
-                                             SriLab.AI India: SOVEREIGN DATA FABRIC - LLD with Flow Diagram 
-===================================================================================================================================================
+<img width="1729" height="835" alt="Screenshot 0" src="https://github.com/user-attachments/assets/be05e629-ac1b-488b-8b94-abd40b8a1ba5" />
 
-           [ RAG ADMIN FLOW - WRITE PATH ]                                       [ USER INFERENCE FLOW - READ PATH ]
-                   ADMINISTRATORS                                                             EMPLOYEES
-                          │                                                                       │
-                          ▼ R.1 Uploads File                                                      ▼ U.1 Asks Question
-                          │                                                                       │
-      ┌─────────────────────────────────────────┐                       ┌───────────────────────────────────────────────┐
-      │              ADMIN PORTAL               │                       │                EMPLOYEE PORTAL                ├── U.2 ──► [Init Trace]
-      │          (admin_rag_ingestion)          │                       │           (employee_chat_inference)           ├── U.9 ──► [Log Search]
-      │         Streamlit | Port: 8501          │                       │            Streamlit | Port: 8502             ├── U.14 ─► [Close Trace]
-      └─┬───────▲─────────────────────┬─────────┘                       └─┬───────▲───────┬───────▲─────┬───────▲───────┘               │
-        │       │                     │                                   │       │       │       │     │       │                       ▼
-    R.2 │   R.5 │                 R.6 │                               U.3 │   U.6 │  U.10 │  U.13 │ U.7 │   U.8 │               ┌───────────────┐
-  Embed │Return │               Store │                             Embed │Return │   Ask │Return │ Srch│   Rtn │               │ OBSERVABILITY │
-  Query │Vector │             Payload │                             Query │Vector │   LLM │Answer │  DB │Chunks │               │   Langfuse    │
-        ▼       │                     ▼                                   ▼       │       ▼       │     ▼       │               │  Port: 3000   │
-      ┌─┴───────┴─┐         ┌─────────┴─────────┐                       ┌─┴───────┴───────┴───────┴─┐ ┌─┴───────┴──┐            └───────────────┘
-      │  GATEWAY  │         │  VECTOR DATABASE  │                       │          GATEWAY          │ │ VECTOR DB  │
-      │  LiteLLM  │         │      Qdrant       │                       │          LiteLLM          │ │   Qdrant   │
-      │ Port:4000 │         │    Port: 6333     │                       │         Port: 4000        │ │ Port: 6333 │
-      └─┬───────▲─┘         └───────────────────┘                       └─┬───────▲───────┬───────▲─┘ └────────────┘
-        │       │                                                         │       │       │       │
-    R.3 │   R.4 │                                                     U.4 │   U.5 │  U.11 │  U.12 │
- Fwd to │Return │                                                  Fwd to │Return │Fwd to │Return │
- Ollama │Vector │                                                  Ollama │Vector │Ollama │Answer │
-        ▼       │                                                         ▼       │       ▼       │
-      ┌─┴───────┴─────────────────────────────────────────────────────────┴───────┴───────┴───────┴─────────────────────────────────────────┐
-      │                                                  LOCAL AI ENGINE (OLLAMA)                                                           │
-      │                                                        Port: 11434                                                                  │
-      │                                                                                                                                     │
-      │                             [ VECTOR MODEL ]                                              [ REASONING MODEL ]                       │
-      │                          nomic-embed-text-v2-moe                                              llama3.1:8b                           │
-      └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
 ### Hands-on - Deployment of above Architecture:
 
 % python3.11 -m venv py3.11.venv
