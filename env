@@ -1,0 +1,18 @@
+# ==========================================
+# LOCAL ENVIRONMENT CONFIGURATION
+# ==========================================
+
+# --- Observability Stack (Langfuse) ---
+# Replace the PK and SK with your actual keys from http://localhost:3000
+LANGFUSE_SECRET_KEY="sk-lf-************************************"
+LANGFUSE_PUBLIC_KEY="pk-lf-************************************"
+LANGFUSE_BASE_URL="http://localhost:3000"
+LANGFUSE_HOST=http://localhost:3000
+
+# --- Telemetry Resiliency ---
+# Allows Langfuse to wait up to 300s if the local Postgres DB is busy
+LANGFUSE_REQUEST_TIMEOUT=300
+# --- Local Infrastructure Overrides ---
+# These trick LangChain into using your local Fabric instead of the cloud
+LITELLM_PROXY_URL=http://localhost:4000
+LOCAL_DUMMY_KEY=sk-local-dummy-key
